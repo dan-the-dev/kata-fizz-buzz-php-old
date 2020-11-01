@@ -14,13 +14,9 @@ class FizzBuzzTest extends TestCase
         $this->fizzBuzz = new FizzBuzz();
     }
 
-    public function testShallPass(): void
+    public function testItReturnsString1WhenReceivingNumber1(): void
     {
-        $this->assertEquals(1, 1);
-    }
-
-    public function testHandleReturnTrue(): void
-    {
-        $this->assertEquals(true, $this->fizzBuzz->handle());
+        $actual = $this->fizzBuzz->handle(1);
+        $this->assertSame("1", $actual);
     }
 }
