@@ -37,4 +37,10 @@ class FizzBuzzTest extends TestCase
         $actual = $this->fizzBuzz->handle(3);
         $this->assertSame("Fizz", $actual);
     }
+
+    public function testItReturnsFizzWhenReceivingNumber6(): void
+    {
+        $actual = $this->fizzBuzz->handle(6);
+        $this->assertSame("Fizz", $actual);
+    }
 }
