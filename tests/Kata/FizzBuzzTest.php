@@ -50,6 +50,18 @@ class FizzBuzzTest extends TestCase
         $this->assertSame("Fizz", $actual);
     }
 
+    public function testItReturnsFizzWhenReceivingNumber66(): void
+    {
+        $actual = $this->fizzBuzz->handle(66);
+        $this->assertSame("Fizz", $actual);
+    }
+
+    public function testItReturnsFizzWhenReceivingNumber99(): void
+    {
+        $actual = $this->fizzBuzz->handle(99);
+        $this->assertSame("Fizz", $actual);
+    }
+
     public function testItReturnsBuzzWhenReceivingNumber5(): void
     {
         $actual = $this->fizzBuzz->handle(5);
@@ -65,6 +77,18 @@ class FizzBuzzTest extends TestCase
     public function testItReturnsBuzzWhenReceivingNumber20(): void
     {
         $actual = $this->fizzBuzz->handle(20);
+        $this->assertSame("Buzz", $actual);
+    }
+
+    public function testItReturnsBuzzWhenReceivingNumber40(): void
+    {
+        $actual = $this->fizzBuzz->handle(40);
+        $this->assertSame("Buzz", $actual);
+    }
+
+    public function testItReturnsBuzzWhenReceivingNumber70(): void
+    {
+        $actual = $this->fizzBuzz->handle(70);
         $this->assertSame("Buzz", $actual);
     }
 
@@ -84,5 +108,23 @@ class FizzBuzzTest extends TestCase
     {
         $actual = $this->fizzBuzz->handle(45);
         $this->assertSame("FizzBuzz", $actual);
+    }
+
+    public function testItReturnsFizzBuzzWhenReceivingNumber90(): void
+    {
+        $actual = $this->fizzBuzz->handle(90);
+        $this->assertSame("FizzBuzz", $actual);
+    }
+
+    public function testItReturnsBuzzWhenReceivingNumber100(): void
+    {
+        $actual = $this->fizzBuzz->handle(100);
+        $this->assertSame("Buzz", $actual);
+    }
+
+    public function testItReturns99AsStringWhenReceivingNumber99(): void
+    {
+        $actual = $this->fizzBuzz->handle(98);
+        $this->assertSame("98", $actual);
     }
 }
