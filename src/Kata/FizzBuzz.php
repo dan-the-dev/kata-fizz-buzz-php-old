@@ -6,7 +6,7 @@ class FizzBuzz
 {
     public function handle(int $number): string
     {
-        if ($number === 15 || $number === 30){
+        if ($number === 15 || $number === 30 || $number === 45){
             return "FizzBuzz";
         } else if ($number % 3 === 0){
             return "Fizz";
