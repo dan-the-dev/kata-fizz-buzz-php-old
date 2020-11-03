@@ -90,4 +90,46 @@ class FuzzBuzzTest extends TestCase
 
         $this->assertSame("Fizz", $expected);
     }
+
+    public function testReturnsBuzzWhenInputIs5(): void
+    {
+        $expected = $this->fizzBuzz->handle(5);
+
+        $this->assertSame("Buzz", $expected);
+    }
+
+    public function testReturnsBuzzWhenInputIs10(): void
+    {
+        $expected = $this->fizzBuzz->handle(10);
+
+        $this->assertSame("Buzz", $expected);
+    }
+
+    public function testReturnsBuzzWhenInputIs20(): void
+    {
+        $expected = $this->fizzBuzz->handle(20);
+
+        $this->assertSame("Buzz", $expected);
+    }
+
+    public function testReturnsBuzzWhenInputIs25(): void
+    {
+        $expected = $this->fizzBuzz->handle(25);
+
+        $this->assertSame("Buzz", $expected);
+    }
+
+    public function testReturnsBuzzWhenInputIs100(): void
+    {
+        $expected = $this->fizzBuzz->handle(100);
+
+        $this->assertSame("Buzz", $expected);
+    }
+
+    public function testReturnsBuzzWhenInputIs95(): void
+    {
+        $expected = $this->fizzBuzz->handle(95);
+
+        $this->assertSame("Buzz", $expected);
+    }
 }
