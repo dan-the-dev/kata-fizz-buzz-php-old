@@ -34,4 +34,32 @@ class FuzzBuzzTest extends TestCase
 
         $this->assertEquals("4", $actual);
     }
+
+    public function testNumber3IsConvertedToStringFizz(): void
+    {
+        $actual = $this->fizzBuzz->handle(3);
+
+        $this->assertEquals("Fizz", $actual);
+    }
+
+    public function testNumber6IsConvertedToStringFizz(): void
+    {
+        $actual = $this->fizzBuzz->handle(6);
+
+        $this->assertEquals("Fizz", $actual);
+    }
+
+    public function testNumber9IsConvertedToStringFizz(): void
+    {
+        $actual = $this->fizzBuzz->handle(9);
+
+        $this->assertEquals("Fizz", $actual);
+    }
+
+    public function testNumber12IsConvertedToStringFizz(): void
+    {
+        $actual = $this->fizzBuzz->handle(12);
+
+        $this->assertEquals("Fizz", $actual);
+    }
 }
