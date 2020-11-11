@@ -15,4 +15,9 @@ class Number
     {
         return $this->value === $anotherNumber->value;
     }
+
+    public function __toString(): string
+    {
+        return "{$this->value}";
+    }
 }
