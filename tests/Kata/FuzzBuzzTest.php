@@ -16,9 +16,16 @@ class FuzzBuzzTest extends TestCase
 
     public function test1ShouldReturn1AsString(): void
     {
-        $actual = $this->fizzBuzz->handle();
+        $actual = $this->fizzBuzz->handle(1);
 
         $this->assertEquals("1", $actual);
+    }
+
+    public function test2ShouldReturn2AsString(): void
+    {
+        $actual = $this->fizzBuzz->handle(2);
+
+        $this->assertEquals("2", $actual);
     }
 
 }

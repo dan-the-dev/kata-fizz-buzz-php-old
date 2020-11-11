@@ -4,8 +4,9 @@ namespace Kata;
 
 class FizzBuzz
 {
-    public function handle(): string
+    public function handle(int $number): string
     {
-        return "1";
+        $str = $number === 1 ? "1" : "2";
+        return $str;
     }
 }
