@@ -6,7 +6,7 @@ class FizzBuzz
 {
     public function handle(Number $number): string
     {
-        if ($number->equals(new Number(3)) || $number->equals(new Number(6)) || $number->equals(new Number(9))) {
+        if ($number->isDividableBy(new Number(3))) {
             return 'Fizz';
         }
         return $number->__toString();

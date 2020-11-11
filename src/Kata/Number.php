@@ -20,4 +20,9 @@ class Number
     {
         return "{$this->value}";
     }
+
+    public function isDividableBy(Number $dividend): bool
+    {
+        return $this->value % $dividend->value === 0;
+    }
 }
