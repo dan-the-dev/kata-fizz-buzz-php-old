@@ -14,13 +14,11 @@ class FuzzBuzzTest extends TestCase
         $this->fizzBuzz = new FizzBuzz();
     }
 
-    public function testShallPass(): void
+    public function test1ShouldReturn1AsString(): void
     {
-        $this->assertEquals(1, 1);
+        $actual = $this->fizzBuzz->handle();
+
+        $this->assertEquals("1", $actual);
     }
 
-    public function testHandleReturnTrue(): void
-    {
-        $this->assertEquals(true, $this->fizzBuzz->handle());
-    }
 }
