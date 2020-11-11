@@ -35,4 +35,11 @@ class FuzzBuzzTest extends TestCase
         $this->assertEquals("4", $actual);
     }
 
+    public function test3ShouldReturnFizz(): void
+    {
+        $actual = $this->fizzBuzz->handle(new Number(3));
+
+        $this->assertEquals("Fizz", $actual);
+    }
+
 }
