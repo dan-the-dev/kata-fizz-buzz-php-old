@@ -56,4 +56,53 @@ class FuzzBuzzTest extends TestCase
         $this->assertEquals("Fizz", $actual);
     }
 
+    public function test5ShouldReturnBuzz(): void
+    {
+        $actual = $this->fizzBuzz->handle(new Number(5));
+
+        $this->assertEquals("Buzz", $actual);
+    }
+
+    public function test10ShouldReturnBuzz(): void
+    {
+        $actual = $this->fizzBuzz->handle(new Number(10));
+
+        $this->assertEquals("Buzz", $actual);
+    }
+
+    public function test20ShouldReturnBuzz(): void
+    {
+        $actual = $this->fizzBuzz->handle(new Number(20));
+
+        $this->assertEquals("Buzz", $actual);
+    }
+
+    public function test15ShouldReturnBuzz(): void
+    {
+        $actual = $this->fizzBuzz->handle(new Number(15));
+
+        $this->assertEquals("FizzBuzz", $actual);
+    }
+
+    public function test30ShouldReturnBuzz(): void
+    {
+        $actual = $this->fizzBuzz->handle(new Number(30));
+
+        $this->assertEquals("FizzBuzz", $actual);
+    }
+
+    public function test45ShouldReturnBuzz(): void
+    {
+        $actual = $this->fizzBuzz->handle(new Number(45));
+
+        $this->assertEquals("FizzBuzz", $actual);
+    }
+
+    public function test90ShouldReturnBuzz(): void
+    {
+        $actual = $this->fizzBuzz->handle(new Number(90));
+
+        $this->assertEquals("FizzBuzz", $actual);
+    }
+
 }
