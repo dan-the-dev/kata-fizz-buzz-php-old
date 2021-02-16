@@ -9,6 +9,9 @@ class FizzBuzz
 
     public function handle(int $number): string
     {
+        if ($number %3 === 0 && $number % 5 === 0) {
+            return self::FIZZ . self::BUZZ;
+        }
         if ($number % 3 === 0) {
             return self::FIZZ;
         }
