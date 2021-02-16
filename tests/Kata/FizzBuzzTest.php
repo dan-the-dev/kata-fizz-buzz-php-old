@@ -38,7 +38,7 @@ class FizzBuzzTest extends TestCase
     public function testNumber100ReturnsString100(): void
     {
         $actual = $this->fizzBuzz->handle(100);
-        $expected = "100";
+        $expected = "Buzz";
         $this->assertSame($expected, $actual);
     }
 
@@ -60,6 +60,34 @@ class FizzBuzzTest extends TestCase
     {
         $actual = $this->fizzBuzz->handle(9);
         $expected = "Fizz";
+        $this->assertSame($expected, $actual);
+    }
+
+    public function testNumber99ReturnsFizz(): void
+    {
+        $actual = $this->fizzBuzz->handle(99);
+        $expected = "Fizz";
+        $this->assertSame($expected, $actual);
+    }
+
+    public function testNumber5ReturnsBuzz(): void
+    {
+        $actual = $this->fizzBuzz->handle(5);
+        $expected = "Buzz";
+        $this->assertSame($expected, $actual);
+    }
+
+    public function testNumber10ReturnsBuzz(): void
+    {
+        $actual = $this->fizzBuzz->handle(10);
+        $expected = "Buzz";
+        $this->assertSame($expected, $actual);
+    }
+
+    public function testNumber20ReturnsBuzz(): void
+    {
+        $actual = $this->fizzBuzz->handle(20);
+        $expected = "Buzz";
         $this->assertSame($expected, $actual);
     }
     
