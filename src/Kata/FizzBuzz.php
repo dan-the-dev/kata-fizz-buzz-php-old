@@ -4,20 +4,8 @@ namespace Kata;
 
 class FizzBuzz
 {
-    const FIZZ = 'Fizz';
-    const BUZZ = 'Buzz';
-
-    public function handle(int $number): string
+    public function handle(NumberObject $number): string
     {
-        if ($number %3 === 0 && $number % 5 === 0) {
-            return self::FIZZ . self::BUZZ;
-        }
-        if ($number % 3 === 0) {
-            return self::FIZZ;
-        }
-        if ($number % 5 === 0) {
-            return self::BUZZ;
-        }
-        return (string) $number;
+        return $number->toString();
     }
 }
