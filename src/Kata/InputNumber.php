@@ -32,22 +32,6 @@ class InputNumber
     /**
      * @return bool
      */
-    private function isMultipleOf3(): bool
-    {
-        return $this->value % 3 === 0;
-    }
-
-    /**
-     * @return bool
-     */
-    private function isMultipleOf5(): bool
-    {
-        return $this->value % 5 === 0;
-    }
-
-    /**
-     * @return bool
-     */
     private function isMultipleOf(int $number): bool
     {
         return $this->value % $number === 0;
