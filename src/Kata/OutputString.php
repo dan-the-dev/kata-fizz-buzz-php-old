@@ -16,4 +16,17 @@ class OutputString
         return $this->value;
     }
 
+    public function __toString()
+    {
+        return $this->value;
+    }
+
+    /**
+     * @param array<OutputString> $outputStringCollection
+     * @return OutputString
+     */
+    public static function fromOutputStringCollection(array $outputStringCollection): OutputString
+    {
+        return new OutputString(implode("\n", $outputStringCollection));
+    }
 }
