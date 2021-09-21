@@ -67,4 +67,14 @@ class FizzBuzzTest extends TestCase
     {
         $this->assertEquals(new OutputString("FizzBuzz"), $this->fizzBuzz->printNumber(new InputNumber(15)));
     }
+
+    public function testNumber30PrintsFizzBuzz(): void
+    {
+        $this->assertEquals(new OutputString("FizzBuzz"), $this->fizzBuzz->printNumber(new InputNumber(30)));
+    }
+
+    public function testNumber90PrintsFizzBuzz(): void
+    {
+        $this->assertEquals(new OutputString("FizzBuzz"), $this->fizzBuzz->printNumber(new InputNumber(90)));
+    }
 }
