@@ -15,7 +15,15 @@ class FizzBuzzTest extends TestCase
 
     public function testAllNumbers(): void
     {
-        $this->assertEquals(new OutputString(
+        $this->assertEquals($this->completeFizzBuzz1to100(), $this->fizzBuzz->printAllNumbers());
+    }
+
+    /**
+     * @return OutputString
+     */
+    private function completeFizzBuzz1to100(): OutputString
+    {
+        return new OutputString(
             "1
 2
 Fizz
@@ -116,6 +124,6 @@ Fizz
 98
 Fizz
 Buzz"
-        ), $this->fizzBuzz->printAllNumbers());
+        );
     }
 }

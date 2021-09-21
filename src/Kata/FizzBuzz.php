@@ -8,8 +8,7 @@ class FizzBuzz
     {
         $collection = new OutputStringCollection();
         for ($k = 1 ; $k <= 100; $k++){
-            $inputNumber = new InputNumber($k);
-            $collection->add($inputNumber->toOutputString());
+            $collection->add(OutputString::fromInputNumber(new InputNumber($k)));
         }
 
         return $collection->merge();

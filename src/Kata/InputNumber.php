@@ -4,8 +4,6 @@ namespace Kata;
 
 class InputNumber
 {
-    const FIZZ = "Fizz";
-    const BUZZ = "Buzz";
     private $value;
 
     public function __construct(int $value)
@@ -18,23 +16,21 @@ class InputNumber
         return $this->value === $number->value;
     }
 
-    public function toOutputString(): OutputString
+    public function isMultipleOf3(): bool
     {
-        if ($this->isMultipleOf(3) && $this->isMultipleOf(5)) {
-            return new OutputString(self::FIZZ . self::BUZZ);
-        }
-        if ($this->isMultipleOf(3)) {
-            return new OutputString(self::FIZZ);
-        }
-        if ($this->isMultipleOf(5)) {
-            return new OutputString(self::BUZZ);
-        }
-        return new OutputString((string) $this->value);
+        return $this->isMultipleOf(3);
     }
 
-    /**
-     * @return bool
-     */
+    public function isMultipleOf5(): bool
+    {
+        return $this->isMultipleOf(5);
+    }
+
+    public function __toString()
+    {
+        return (string) $this->value;
+    }
+
     private function isMultipleOf(int $number): bool
     {
         return $this->value % $number === 0;
