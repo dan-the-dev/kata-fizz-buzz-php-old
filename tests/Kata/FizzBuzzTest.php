@@ -15,11 +15,11 @@ class FizzBuzzTest extends TestCase
 
     public function testNumber1Prints1(): void
     {
-        $this->assertEquals(1, $this->fizzBuzz->printNumber(new Number(1)));
+        $this->assertSame("1", $this->fizzBuzz->printNumber(new Number(1)));
     }
 
     public function testNumber2Prints2(): void
     {
-        $this->assertEquals(2, $this->fizzBuzz->printNumber(new Number(2)));
+        $this->assertSame("2", $this->fizzBuzz->printNumber(new Number(2)));
     }
 }
