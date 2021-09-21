@@ -44,4 +44,12 @@ class InputNumber
     {
         return $this->value % 5 === 0;
     }
+
+    /**
+     * @return bool
+     */
+    private function isMultipleOf(int $number): bool
+    {
+        return $this->value % $number === 0;
+    }
 }
