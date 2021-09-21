@@ -4,11 +4,6 @@ namespace Kata;
 
 class FizzBuzz
 {
-    private function printNumber(InputNumber $newFormatNumber): OutputString
-    {
-        return $newFormatNumber->toOutputString();
-    }
-
     public function printAllNumbers(): OutputString
     {
         $collection = [];
