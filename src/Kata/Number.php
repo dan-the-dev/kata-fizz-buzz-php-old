@@ -11,11 +11,6 @@ class Number
         $this->value = $value;
     }
 
-    public function value(): int
-    {
-        return $this->value;
-    }
-
     public function equals(Number $number): bool
     {
         return $this->value === $number->value;
