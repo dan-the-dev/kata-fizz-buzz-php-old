@@ -7,7 +7,7 @@ class FizzBuzz
 
     public function printNumber(Number $newFormatNumber)
     {
-        if ($newFormatNumber->value() === 2) {
+        if ($newFormatNumber->equals(new Number(2))) {
             return 2;
         }
         return 1;
