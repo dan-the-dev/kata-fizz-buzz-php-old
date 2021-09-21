@@ -6,12 +6,12 @@ class FizzBuzz
 {
     public function printAllNumbers(): OutputString
     {
-        $collection = [];
+        $collection = new OutputStringCollection();
         for ($k = 1 ; $k <= 100; $k++){
             $inputNumber = new InputNumber($k);
-            array_push($collection, $inputNumber->toOutputString());
+            $collection->add($inputNumber->toOutputString());
         }
 
-        return OutputString::fromOutputStringCollection($collection);
+        return $collection->merge();
     }
 }
