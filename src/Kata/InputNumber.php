@@ -4,6 +4,7 @@ namespace Kata;
 
 class InputNumber
 {
+    const FIZZ = "Fizz";
     private $value;
 
     public function __construct(int $value)
@@ -18,8 +19,8 @@ class InputNumber
 
     public function toOutputString(): OutputString
     {
-        if ($this->value === 3 || $this->value === 6 || $this->value === 9) {
-            return new OutputString("Fizz");
+        if ($this->value % 3 === 0) {
+            return new OutputString(self::FIZZ);
         }
         return new OutputString((string) $this->value);
     }
