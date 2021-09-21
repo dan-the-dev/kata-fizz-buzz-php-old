@@ -15,4 +15,9 @@ class Number
     {
         return $this->value;
     }
+
+    public function equals(Number $number): bool
+    {
+        return $this->value === $number->value;
+    }
 }
