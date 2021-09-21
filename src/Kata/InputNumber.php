@@ -18,6 +18,9 @@ class InputNumber
 
     public function toOutputString(): OutputString
     {
+        if ($this->value === 3) {
+            return new OutputString("Fizz");
+        }
         return new OutputString((string) $this->value);
     }
 }
