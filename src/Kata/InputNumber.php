@@ -19,9 +19,17 @@ class InputNumber
 
     public function toOutputString(): OutputString
     {
-        if ($this->value % 3 === 0) {
+        if ($this->isMultipleOf3()) {
             return new OutputString(self::FIZZ);
         }
         return new OutputString((string) $this->value);
+    }
+
+    /**
+     * @return bool
+     */
+    private function isMultipleOf3(): bool
+    {
+        return $this->value % 3 === 0;
     }
 }
