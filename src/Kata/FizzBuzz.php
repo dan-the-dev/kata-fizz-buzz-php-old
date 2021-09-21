@@ -5,11 +5,11 @@ namespace Kata;
 class FizzBuzz
 {
 
-    public function printNumber(InputNumber $newFormatNumber): string
+    public function printNumber(InputNumber $newFormatNumber): OutputString
     {
         if ($newFormatNumber->equals(new InputNumber(2))) {
-            return "2";
+            return new OutputString("2");
         }
-        return "1";
+        return new OutputString("1");
     }
 }
