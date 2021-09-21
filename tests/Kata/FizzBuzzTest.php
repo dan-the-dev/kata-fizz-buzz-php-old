@@ -3,7 +3,6 @@
 namespace Kata;
 
 use PHPUnit\Framework\TestCase;
-use Kata\FizzBuzz;
 
 class FizzBuzzTest extends TestCase
 {
@@ -14,5 +13,8 @@ class FizzBuzzTest extends TestCase
         $this->fizzBuzz = new FizzBuzz();
     }
 
-
+    public function testNumber1Prints1(): void
+    {
+        $this->assertEquals(1, $this->fizzBuzz->printNumber());
+    }
 }
