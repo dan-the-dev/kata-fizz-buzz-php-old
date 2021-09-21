@@ -20,6 +20,9 @@ class InputNumber
 
     public function toOutputString(): OutputString
     {
+        if ($this->isMultipleOf(3) && $this->isMultipleOf(5)) {
+            return new OutputString(self::FIZZ . self::BUZZ);
+        }
         if ($this->isMultipleOf(3)) {
             return new OutputString(self::FIZZ);
         }
