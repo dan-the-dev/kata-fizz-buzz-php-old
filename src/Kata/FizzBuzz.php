@@ -5,7 +5,7 @@ namespace Kata;
 class FizzBuzz
 {
 
-    public function printNumber(int $number, Number $newFormatNumber)
+    public function printNumber(Number $newFormatNumber)
     {
         if ($newFormatNumber->value() === 2) {
             return 2;
