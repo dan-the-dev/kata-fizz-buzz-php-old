@@ -23,7 +23,7 @@ class InputNumber
         if ($this->isMultipleOf(3)) {
             return new OutputString(self::FIZZ);
         }
-        if ($this->isMultipleOf5()) {
+        if ($this->isMultipleOf(5)) {
             return new OutputString(self::BUZZ);
         }
         return new OutputString((string) $this->value);
