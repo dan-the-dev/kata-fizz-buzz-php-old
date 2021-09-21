@@ -15,4 +15,9 @@ class InputNumber
     {
         return $this->value === $number->value;
     }
+
+    public function toOutputString(): OutputString
+    {
+        return new OutputString((string) $this->value);
+    }
 }
