@@ -2,7 +2,7 @@
 
 namespace Kata;
 
-class Number
+class InputNumber
 {
     private $value;
 
@@ -11,7 +11,7 @@ class Number
         $this->value = $value;
     }
 
-    public function equals(Number $number): bool
+    public function equals(InputNumber $number): bool
     {
         return $this->value === $number->value;
     }
