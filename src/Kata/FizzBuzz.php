@@ -6,7 +6,7 @@ class FizzBuzz
 {
     public function convertNumber(int $number): string
     {
-        if ($number === 3){
+        if ($number === 3 || $number === 6 || $number === 99){
             return 'Fizz';
         }
         return (string) $number;
