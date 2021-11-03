@@ -20,6 +20,6 @@ For numbers which are multiples of both three and five print “FizzBuzz”.
 
 - [x] Convert simple number to corresponding string - simple -> not multiple of 3 or 5
 - [x] Convert numbers multiple of 3 to Fizz
-- [ ] **Convert numbers multiple of 5 to Buzz**
-- [ ] Convert numbers multiple of both 3 and 5 to Fizz Buzz
-- [ ] Print all converted numbers
+- [x] Convert numbers multiple of 5 to Buzz
+- [x] Convert numbers multiple of both 3 and 5 to Fizz Buzz
+- [ ] **Print all converted numbers**
