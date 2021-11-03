@@ -4,8 +4,11 @@ namespace Kata;
 
 class FizzBuzz
 {
-    public function convertNumber(int $int): string
+    public function convertNumber(int $number): string
     {
-        return (string) $int;
+        if ($number === 3){
+            return 'Fizz';
+        }
+        return (string) $number;
     }
 }
