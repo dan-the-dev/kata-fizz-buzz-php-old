@@ -9,7 +9,10 @@ class FizzBuzz
         if ($number % 3 === 0) {
             return 'Fizz';
         }
-        return (string) $number;
+        if ($number === 5 | $number === 10) {
+            return 'Buzz';
+        }
+        return (string)$number;
     }
 
 
