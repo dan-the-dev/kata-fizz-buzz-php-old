@@ -6,7 +6,7 @@ class FizzBuzz
 {
     public function convertNumber(int $number): string
     {
-        if ($number % 3 === 0 && $number % 15 === 0) {
+        if ($number % 3 === 0 && $number % 5 === 0) {
             return 'FizzBuzz';
         }
         if ($number % 3 === 0) {
