@@ -52,7 +52,7 @@ Feel free to use this repository as a template for your one, or fork from this: 
 # Test List
 ~~- Number -> "Number"~~
 ~~- multipli di 3 -> "Fizz"~~
-- multipli di 5 -> "Buzz"
+~~- multipli di 5 -> "Buzz"~~
 - multipli di 3 e 5 -> "FizzBuzz"
 - stampa tutti i numeri
 - handle number 0 special case
