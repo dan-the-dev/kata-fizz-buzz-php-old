@@ -152,5 +152,9 @@ class FizzBuzzTest extends TestCase
         $actual = $this->fizzBuzz->createList();
 
         $this->assertCount(100, $actual);
+        $this->assertEquals('1', $actual[0]);
+        $this->assertEquals('Buzz', $actual[99]);
+        $this->assertEquals('Fizz', $actual[2]);
+        $this->assertEquals('FizzBuzz', $actual[14]);
     }
 }
