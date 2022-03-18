@@ -14,13 +14,25 @@ class FizzBuzzTest extends TestCase
         $this->fizzBuzz = new FizzBuzz();
     }
 
-    public function testShallPass(): void
+    public function testNumber1IsReturnedAsString1(): void
     {
-        $this->assertEquals(1, 1);
+        $actual = $this->fizzBuzz->convertNumber(1);
+
+        $this->assertEquals('1', $actual);
     }
 
-    public function testHandleReturnTrue(): void
+    public function testNumber2sReturnedAsString2(): void
     {
-        $this->assertEquals(true, $this->fizzBuzz->handle());
+        $actual = $this->fizzBuzz->convertNumber(2);
+
+        $this->assertEquals('2', $actual);
     }
+
+    public function testNumber4sReturnedAsString4(): void
+    {
+        $actual = $this->fizzBuzz->convertNumber(4);
+
+        $this->assertEquals('4', $actual);
+    }
+
 }
