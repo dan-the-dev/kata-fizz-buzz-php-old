@@ -18,5 +18,14 @@ class FizzBuzz
         return (string)$number;
     }
 
+    public function createList(): array
+    {
+        $list = [];
+        for($i=0; $i<100; $i++){
+            $list[]=$i;
+        }
+        return $list;
+    }
+
 
 }

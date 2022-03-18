@@ -112,7 +112,7 @@ class FizzBuzzTest extends TestCase
         $this->assertEquals('Buzz', $actual);
     }
 
-    public function testNumber45IsReturnedAsBuzz(): void
+    public function testNumber55IsReturnedAsBuzz(): void
     {
         $actual = $this->fizzBuzz->convertNumber(55);
 
@@ -145,5 +145,12 @@ class FizzBuzzTest extends TestCase
         $actual = $this->fizzBuzz->convertNumber(90);
 
         $this->assertEquals('FizzBuzz', $actual);
+    }
+
+    public function testListOf100ElementsIsReturned(): void
+    {
+        $actual = $this->fizzBuzz->createList();
+
+        $this->assertCount(100, $actual);
     }
 }
