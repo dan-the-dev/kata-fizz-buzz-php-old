@@ -50,7 +50,7 @@ Feel free to use this repository as a template for your one, or fork from this: 
 | 100    	| Buzz    |
 
 # Test List
-- Number -> "Number"
+~~- Number -> "Number"~~
 - multipli di 3 -> "Fizz"
 - multipli di 5 -> "Buzz"
 - multipli di 3 e 5 -> "FizzBuzz"
